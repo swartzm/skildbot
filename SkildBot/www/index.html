@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Simple Serial</title>
+    </head>
+
+    <body>
+        <div class="app">
+          <div id="message">Hello.</div>
+            <div id="ui">
+                <button id="connectButton">Connect</button>
+            </div>
+        <div id="message">Hello.</div>
+        <button id="forward" onClick="sendCharacter('w')">Forward</button>
+        <button id="left" onClick="sendCharacter('a')">Right</button>
+        <button id="right" onClick="sendCharacter('d')">Left</button>
+        <button id="back" onClick="sendCharacter('d')">Backwards</button>
+        <button id="allStar" onClick="sendCharacter('l')">All Star by Smash Mouth</button>
+        <button id="rickroll" onClick="sendCharacter('r')">One Million Dollars!!!</button>
+
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script>
+            app.initialize();
+        </script>
+    </body>
+</html>
